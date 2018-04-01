@@ -31,7 +31,7 @@ class TheSolution extends Component {
             </ul>
           </p>
           <p>
-            Therefore, Clarify is built with a past->future-> present model, beginning with creating empowering meaning from your past, followed by clarifying a vision of your future, and finishing with introducing tools that begin building momentum in your present.
+            Beem is currently a work in progress.  And we are looking for interested parties.  If this seems like something that appeals to you or may appeal to someone you know please sign up and we'll reach out to you with more information.
           </p>
         </Container>
       </div>
