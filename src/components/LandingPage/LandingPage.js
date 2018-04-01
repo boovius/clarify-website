@@ -12,12 +12,12 @@ class LandingPage extends Component {
         <Container>
           <h2 className='LandingPage-title'>BEEM</h2>
           <div className='LandingPage-tagline'>
-            <h3><span className='LandingPage-tagline--spotlight'>Creating</span></h3>
+            <h3><span className='LandingPage-tagline--spotlight'>Create</span></h3>
             <h3>an intentional <span className='LandingPage-tagline--spotlight'>next-step</span></h3>
-            <h3>towards a life of more <span className='LandingPage-tagline--spotlight'>personal meaning</span></h3>
+            <h3>towards a life of greater <span className='LandingPage-tagline--spotlight'>personal meaning</span></h3>
           </div>
           <div className='LandingPage-callToAction'>
-            <div className='LandingPage-callToAction-button'>Sign Up</div>
+            <div className='LandingPage-callToAction-button'>sign up</div>
           </div>
         </Container>
       </div>
