@@ -5,3 +5,22 @@
   color: #888;
 }
 
+img {
+  height: 300px;
+}
+
+@media (max-width: 975px) {
+  .IdentifyingUser img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .IdentifyingUser {
+    font-size: 1em;
+  }
+  .IdentifyingUser img {
+    height: 100px;
+  }
+}
+

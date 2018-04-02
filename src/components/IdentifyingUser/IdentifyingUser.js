@@ -8,7 +8,6 @@ import * as SC from '../../assets/styles/StyleConstants'
 const imageStyles = {
   display: 'inline-block',
   verticalAlign: 'middle',
-  height: 300,
   marginBottom: 50
 }
 
@@ -22,7 +21,6 @@ const middlePromptStyles = {
 
 const callOutText = {
   color: SC.colors.textCallOut,
-  textDecoration: 'underline'
 }
 
 class IdentifyingUser extends Component {
