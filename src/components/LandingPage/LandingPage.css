@@ -20,6 +20,7 @@
 }
 
 .LandingPage-tagline {
+  font-size: 1.2em;
   font-family: minion-pro-display;
   font-style: italic;
   animation: appear 2s linear 0s normal 1 none running;
@@ -36,7 +37,7 @@
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 50px;
+  bottom: 75px;
 }
 
 .LandingPage-callToAction-button {
@@ -50,8 +51,8 @@
 
 .LandingPage-callToAction-button:hover {
   border: none;
-  background: #e6ac00;
-  color: #888;
+  background: #aaa;
+  color: #42f4bc;
 }
 
 @keyframes appear {
