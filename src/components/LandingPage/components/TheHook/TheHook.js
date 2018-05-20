@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '../Container/Container';
+import Container from '../../../Container/Container';
 import './TheHook.css';
-import backgroundImage from '../../assets/images/sand-dunes-desert-night.jpg'
+import backgroundImage from '../../../../assets/images/sand-dunes-desert-night.jpg'
 
 const sectionStyle = {backgroundImage: `url(${backgroundImage})` }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Container from '../Container/Container';
+import Container from '../../../Container/Container';
 import './TheSolution.css';
-import * as SC from '../../assets/styles/StyleConstants'
+import * as SC from '../../../../assets/styles/StyleConstants'
 
 const callOutText = {
   color: SC.colors.textCallOut,

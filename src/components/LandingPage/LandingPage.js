@@ -1,8 +1,7 @@
 import React from 'react';
-import Container from '../Container/Container';
-import TheHook from '../TheHook/TheHook';
-import IdentifyingUser from '../IdentifyingUser/IdentifyingUser';
-import TheSolution from '../TheSolution/TheSolution';
+import TheHook from './components/TheHook/TheHook';
+import IdentifyingUser from './components/IdentifyingUser/IdentifyingUser';
+import TheSolution from './components/TheSolution/TheSolution';
 
 const LandingPage = () => (
   <div>
