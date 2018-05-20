@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch, Redirect } from "react-router-dom";
 import Container from '../Container/Container';
 import TitleCard from './TitleCard/TitleCard';
 import OneTwo from './OneTwo/OneTwo';
+import OneThree from './OneThree/OneThree';
 import './DayOne.css';
+
 
 const DayOne = ({match}) => (
   <div id='day-1'>
@@ -11,6 +13,7 @@ const DayOne = ({match}) => (
       <Switch>
         <Route path={`${match.url}/1`} component={TitleCard} />
         <Route path={`${match.url}/2`} component={OneTwo} />
+        <Route path={`${match.url}/3`} component={OneThree} />
         <Redirect to={`${match.url}/1`} />
       </Switch>
     </Container>
