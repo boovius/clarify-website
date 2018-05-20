@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import Container from '../Container/Container';
+import './DayOne.css';
 
 class DayOne extends Component {
   render() {
     return (
-      <div>
-        <h3>hello world</h3>
-        <h5>from day 1</h5>
+      <div id='day-1'>
+        <Container>
+          <p>Day 1</p>
+          <h2>Begin with the End</h2>
+        </Container>
       </div>
     )
   }
