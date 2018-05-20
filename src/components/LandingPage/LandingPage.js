@@ -1,26 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '../Container/Container';
-import './LandingPage.css';
-import backgroundImage from '../../assets/images/sand-dunes-desert-night.jpg'
+import TheHook from '../TheHook/TheHook';
+import IdentifyingUser from '../IdentifyingUser/IdentifyingUser';
+import TheSolution from '../TheSolution/TheSolution';
 
-const sectionStyle = {backgroundImage: `url(${backgroundImage})` }
-
-class LandingPage extends Component {
-  render() {
-    return (
-      <div style={sectionStyle} className="LandingPage">
-        <Container>
-          <h2 className='LandingPage-title'>BEEM</h2>
-          <div className='LandingPage-tagline'>
-            <h3>Find your <span className='LandingPage-tagline--spotlight'>way</span>. Find your <span className='LandingPage-tagline--spotlight'>beem</span>.</h3>
-          </div>
-          <div className='LandingPage-callToAction'>
-            <div className='LandingPage-callToAction-button'>Learn more</div>
-          </div>
-        </Container>
-      </div>
-    );
-  }
-}
+const LandingPage = () => (
+  <div>
+    <TheHook />
+    <IdentifyingUser />
+    <TheSolution />
+  </div>
+)
 
 export default LandingPage;
