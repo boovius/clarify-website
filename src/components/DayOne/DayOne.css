@@ -7,3 +7,13 @@ body {
   text-align: center;
   margin-top: 25vh;
 }
+
+.down-arrow {
+  margin-top: 20vh;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.down-arrow:hover {
+  color: #f9e9d6;
+}
