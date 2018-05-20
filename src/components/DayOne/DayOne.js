@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import { Route, Link } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Container from '../Container/Container';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import TitleCard from './TitleCard/TitleCard';
 import OneTwo from './OneTwo/OneTwo';
 import './DayOne.css';
 
 const DayOne = ({match}) => (
   <div id='day-1'>
     <Container>
-      <p>Day 1</p>
-      <h2>Begin with the End</h2>
-      <Link to={match.url + '/1-2'}>
-        <FontAwesomeIcon className='down-arrow' icon="angle-double-down" />
-      </Link>
-      <Route path={match.url + '/1-2'} component={OneTwo} />
+      <Switch>
+        <Route path={`${match.url}/1`} component={TitleCard} />
+        <Route path={`${match.url}/2`} component={OneTwo} />
+        <Redirect to={`${match.url}/1`} />
+      </Switch>
     </Container>
   </div>
 )

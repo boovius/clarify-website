@@ -12,7 +12,7 @@ const App = () => (
   <Router>
     <div className="App">
       <Route exact path="/" component={LandingPage} />
-      <Route exact path="/day-1" component={DayOne} />
+      <Route path="/day-1" component={DayOne} />
     </div>
   </Router>
 );

@@ -12,6 +12,7 @@ body {
   margin-top: 20vh;
   cursor: pointer;
   font-size: 25px;
+  color: #fff;
 }
 
 .down-arrow:hover {
