@@ -16,7 +16,7 @@ const OneThree = () => (
     <p>towards a life</p>
     <p>of our highest fulfillment.</p>
     <div>
-      <Link to='3'>
+      <Link to='4'>
         <FontAwesomeIcon className='down-arrow' icon="angle-double-down" />
       </Link>
     </div>
