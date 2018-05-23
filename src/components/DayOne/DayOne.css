@@ -7,14 +7,14 @@ body {
   margin-top: 25vh;
 }
 
-.down-arrow {
+.angle-double-down {
   margin-top: 20vh;
   cursor: pointer;
   font-size: 25px;
   color: #fff;
 }
 
-.down-arrow:hover {
+.angle-double-down:hover {
   color: #f9e9d6;
 }
 

@@ -1,14 +1,37 @@
-import React from 'react';
-import { Route, Switch, Redirect } from "react-router-dom";
-import Container from '../Container/Container';
-import TitleCard from './TitleCard/TitleCard';
-import OneTwo from './OneTwo/OneTwo';
-import OneThree from './OneThree/OneThree';
-import OneFour from './OneFour/OneFour';
-import OneFive from './OneFive/OneFive';
-import OneSix from './OneSix/OneSix';
-import './DayOne.css';
+import React from 'react'
+import { Route, Switch, Redirect } from "react-router-dom"
+import Container from '../Container/Container'
+import TitleCard from './TitleCard/TitleCard'
+import OneTwo from './OneTwo/OneTwo'
+import OneThree from './OneThree/OneThree'
+import LinearFlowCard from '../LinearFlowCard'
+import './DayOne.css'
 
+
+const cards = [
+  [
+    "A sense of direction to a life of our highest fulfillment",
+    "requires a connection to our deepest and most core values."
+  ],
+  [
+    "It requires that we ask ourselves hard questions.",
+  ],
+  [
+    "What really matters to me?",
+    "What matters most?",
+  ],
+  [
+    "We're going to imagine our lives at the very end of them.",
+  ],
+]
+
+const cardFlow = (match) => cards.map((messages, cardIndex) =>
+  <Route key={cardIndex} path={`${match.url}/${4 + cardIndex}`} render={
+    (props) => (
+      <LinearFlowCard {...props} day='one' index={`${4 + cardIndex}`} messages={messages} />
+    )
+  }/>
+)
 
 const DayOne = ({match}) => (
   <div id='day-1'>
@@ -17,9 +40,7 @@ const DayOne = ({match}) => (
         <Route path={`${match.url}/1`} component={TitleCard} />
         <Route path={`${match.url}/2`} component={OneTwo} />
         <Route path={`${match.url}/3`} component={OneThree} />
-        <Route path={`${match.url}/4`} component={OneFour} />
-        <Route path={`${match.url}/5`} component={OneFive} />
-        <Route path={`${match.url}/6`} component={OneSix} />
+        {cardFlow(match)}
         <Redirect to={`${match.url}/1`} />
       </Switch>
     </Container>
