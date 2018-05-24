@@ -6,28 +6,8 @@ import OneTwo from './OneTwo/OneTwo'
 import OneThree from './OneThree/OneThree'
 import LinearFlowCard from '../LinearFlowCard'
 import './DayOne.css'
+import cards from './cards'
 
-
-const cards = [
-  [
-    "A sense of direction to a life of our highest fulfillment",
-    "requires a connection to our deepest and most core values."
-  ],
-  [
-    "It requires that we ask ourselves hard questions.",
-  ],
-  [
-    "What really matters to me?",
-    "What matters most?",
-  ],
-  [
-    "We need to consider the totality of our lives.",
-    "Our lives as a whole.",
-  ],
-  [
-    "We're going to imagine our lives at the very end of them.",
-  ],
-]
 
 const cardFlow = (match) => cards.map((messages, cardIndex) =>
   <Route key={cardIndex} path={`${match.url}/${4 + cardIndex}`} render={
