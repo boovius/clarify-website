@@ -6,7 +6,7 @@ import Delayed from 'react-delayed'
 const LinearFlowCard = ({day, index, messages}) => (
   <div className={`${day}-${index}`}>
     {messages.map((message,i) => (
-      <Delayed key={i} mounted={true} mountAfter={(i+0)*500}>
+      <Delayed key={i} mounted={true} mountAfter={(i+1)*500}>
         <ReactCSSTransitionGroup
           transitionName='message'
           transitionAppearTimeout={500}
@@ -18,7 +18,17 @@ const LinearFlowCard = ({day, index, messages}) => (
         </ReactCSSTransitionGroup>
       </Delayed>
     ))}
-    <DownArrowLink next={`${parseInt(index)+1}`} />
+    <Delayed mounted={true} mountAfter={(messages.length+1)*500}>
+      <ReactCSSTransitionGroup
+        transitionName='message'
+        transitionAppearTimeout={500}
+        transitionAppear={true}
+        transitionEnter={false}
+        transitionLeave={false}
+      >
+        <DownArrowLink next={`${parseInt(index)+1}`} />
+      </ReactCSSTransitionGroup>
+    </Delayed>
   </div>
 )
 
