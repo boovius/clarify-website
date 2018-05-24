@@ -21,6 +21,10 @@ const cards = [
     "What matters most?",
   ],
   [
+    "We need to consider the totality of our lives.",
+    "Our lives as a whole.",
+  ],
+  [
     "We're going to imagine our lives at the very end of them.",
   ],
 ]
