@@ -15,3 +15,12 @@ body {
   transition: opacity .5s ease-in;
 }
 
+.word-appear {
+  opacity: 0.01;
+}
+
+.word-appear.word-appear-active {
+  opacity: 1;
+  transition: opacity .05s ease-in;
+}
+

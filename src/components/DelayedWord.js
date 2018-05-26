@@ -7,10 +7,10 @@ const DelayedWord = ({word}) => {
   return (
     <span>
       {letters.map((letter,i) => (
-        <Delayed key={i} mounted={true} mountAfter={(i+1)*500}>
+        <Delayed key={i} mounted={true} mountAfter={(i+1)*50}>
           <ReactCSSTransitionGroup
             transitionName='message'
-            transitionAppearTimeout={500}
+            transitionAppearTimeout={50}
             transitionAppear={true}
             transitionEnter={false}
             transitionLeave={false}

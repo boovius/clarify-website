@@ -16,7 +16,7 @@ const LinearFlowCard = ({flowLength, day, index, messages}) => (
           transitionEnter={false}
           transitionLeave={false}
         >
-          <p>{message}</p>
+          <p><DelayedWord word={message} /></p>
         </ReactCSSTransitionGroup>
       </Delayed>
     ))}
