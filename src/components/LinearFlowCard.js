@@ -2,8 +2,11 @@ import React from 'react'
 import DownArrowLink from './DownArrowLink'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Delayed from 'react-delayed'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import DelayedWord from './DelayedWord'
 
 const LinearFlowCard = ({flowLength, day, index, messages}) => (
+  <div className={`card-flow ${day}-${index}`}>
     {messages.map((message,i) => (
       <Delayed key={i} mounted={true} mountAfter={(i+1)*500}>
         <ReactCSSTransitionGroup
@@ -28,6 +31,7 @@ const LinearFlowCard = ({flowLength, day, index, messages}) => (
         <DownArrowLink ratio={index/flowLength} next={`${parseInt(index)+1}`} />
       </ReactCSSTransitionGroup>
     </Delayed>
+    <FontAwesomeIcon className='angle-double-down angle-double-down-marker' icon='angle-double-down' />
   </div>
 )
 

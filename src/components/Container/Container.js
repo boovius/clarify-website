@@ -4,7 +4,7 @@ import './Container.css';
 class Container extends Component {
   render() {
     return (
-      <div className="Container">
+      <div className="container">
         {this.props.children}
       </div>
     );

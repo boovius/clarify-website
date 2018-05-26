@@ -1,20 +1,32 @@
-body {
+#day-1 {
+  color: white;
+  padding-top: 25vh;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   background-color: #f2952b;
 }
 
-#day-1 {
-  color: white;
-  margin-top: 25vh;
+.card-flow {
+  position: relative;
+  height: 100%;
 }
 
 .angle-double-down {
-  margin-top: 20vh;
   cursor: pointer;
   font-size: 25px;
   color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 30%;
 }
 
 .angle-double-down:hover {
   color: #f9e9d6;
 }
 
+.angle-double-down-marker {
+  cursor: default;
+  opacity: .4;
+  margin-left: 80%;
+}
