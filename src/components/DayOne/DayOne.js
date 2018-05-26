@@ -12,7 +12,7 @@ import cards from './cards'
 const cardFlow = (match) => cards.map((messages, cardIndex) =>
   <Route key={cardIndex} path={`${match.url}/${4 + cardIndex}`} render={
     (props) => (
-      <LinearFlowCard {...props} day='one' index={`${4 + cardIndex}`} messages={messages} />
+      <LinearFlowCard {...props} flowLength={cards.length} day='one' index={`${4 + cardIndex}`} messages={messages} />
     )
   }/>
 )
