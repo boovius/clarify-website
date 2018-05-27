@@ -1,6 +1,59 @@
 const cards = [
   [
-    "A sense of direction to a life of our highest fulfillment",
+    'In the world of today, most of our basic needs are accounted for.',
+  ],
+  [
+    'Many of us have grown up with a sense that we "could be anything we want".',
+  ],
+  [
+    "But then for nearly all of us",
+    "we discovered that life as an adult is not",
+    "what we had envisioned it would be when we were kids.",
+  ],
+  [
+    "It feels like we've been mislead.",
+    "Or lead on.",
+    "Almost like we've been duped or cheated. ",
+  ],
+  [
+    "And we carry that feeling around with us",
+    "in our day to day lives",
+    "going from home to work and back again.",
+  ],
+  [
+    "And again.",
+    "And again.",
+    "And again.",
+    "And again.",
+    "And again.",
+    "And again.",
+    "And again.",
+    "....",
+  ],
+  [
+    "We attempt to achieve the trappings of success that we see around us,",
+    "those we have grown to recognize as markers of a successful life",
+  ],
+  [
+    "But these frequently do not ring true to us, deep in our core",
+  ],
+  [
+    "They feel like someone else's dream we're constantly striving to make our own",
+  ],
+  [
+    "So you may find yourself wondering: ",
+  ],
+  [
+    "am I wasting my life?",
+  ],
+  [
+    "is this all there is? ",
+  ],
+  [
+    "aren't I meant for something more? ",
+  ],
+  [
+    "A sense of direction to a life that lights us up",
     "requires a connection to our deepest and most core values."
   ],
   [
@@ -18,14 +71,15 @@ const cards = [
     "Our lives as a whole.",
   ],
   [
-    "So to do this,",
+    "To do this,",
     "we're going to imagine our lives at the very end of them.",
   ],
   [
     "We're going to blast forward many, many years",
   ],
   [
-    "After you have lived a long and beautiful life.",
+    "After you have lived a long life,",
+    "a wonderous life",
   ],
   [
     "You find yourself at your funeral",
