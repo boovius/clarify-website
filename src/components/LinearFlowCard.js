@@ -1,11 +1,16 @@
 import React from 'react'
-import DownArrowLink from './DownArrowLink'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Delayed from 'react-delayed'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import DelayedWord from './DelayedWord'
+import BreadCrumbRow from './BreadCrumbRow'
+import { css as glamor } from 'glamor'
 
-const LinearFlowCard = ({flowLength, day, index, messages}) => (
+const breadCrumbStyleRule = glamor({
+  position: 'absolute',
+  width: '100%',
+  bottom: '100px',
+})
+
+const LinearFlowCard = ({length, day, index, messages}) => (
   <div className={`card-flow ${day}-${index}`}>
     {messages.map((message,i) => (
       <Delayed key={i} mounted={true} mountAfter={(i+1)*500}>
@@ -20,7 +25,7 @@ const LinearFlowCard = ({flowLength, day, index, messages}) => (
         </ReactCSSTransitionGroup>
       </Delayed>
     ))}
-    <Delayed mounted={true} mountAfter={(messages.length+1)*500}>
+    <Delayed mounted={true} mountAfter={(messages.length + 1) * 500}>
       <ReactCSSTransitionGroup
         transitionName='message'
         transitionAppearTimeout={500}
@@ -28,10 +33,9 @@ const LinearFlowCard = ({flowLength, day, index, messages}) => (
         transitionEnter={false}
         transitionLeave={false}
       >
-        <DownArrowLink ratio={index/flowLength} next={`${parseInt(index)+1}`} />
+        <BreadCrumbRow styleRule={breadCrumbStyleRule} length={length} index={index} />
       </ReactCSSTransitionGroup>
     </Delayed>
-    <FontAwesomeIcon className='angle-double-down angle-double-down-marker' icon='angle-double-down' />
   </div>
 )
 
