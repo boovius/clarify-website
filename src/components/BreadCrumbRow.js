@@ -31,7 +31,7 @@ const Circle = styled.div`
 
 const PastBreadCrumbs = ({index}) => {
   let breadcrumbs = []
-  for (let i = 0; i < index; i++) {
+  for (let i = 0; i < index - 1; i++) {
     breadcrumbs.push(<Circle filled={true} />)
   }
   return breadcrumbs
@@ -45,7 +45,7 @@ const PresentBreadCrumb = ({index}) => (
 
 const FutureBreadCrumbs = ({length, index}) => {
   let breadcrumbs = []
-  for (let i = 0; i < length - index; i++) {
+  for (let i = 0; i < length - index + 1; i++) {
     breadcrumbs.push(<Circle filled={false} />)
   }
   return breadcrumbs
