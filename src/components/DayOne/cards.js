@@ -1,13 +1,16 @@
 const cards = [
   [
-    'In the world of today, most of our basic needs are accounted for.',
+    'We are unsatisfied',
+  ],
+  [
+    "In today's world, most of our basic needs are accounted for.",
   ],
   [
     'Many of us have grown up with a sense that we "could be anything we want".',
   ],
   [
     "But then for nearly all of us",
-    "we discovered that life as an adult is not",
+    "we discover that life as an adult is not",
     "what we had envisioned it would be when we were kids.",
   ],
   [
@@ -21,8 +24,7 @@ const cards = [
     "going from home to work and back again.",
   ],
   [
-    "And again.",
-    "And again.",
+    "And back again.",
     "And again.",
     "And again.",
     "And again.",
@@ -32,10 +34,13 @@ const cards = [
   ],
   [
     "We attempt to achieve the trappings of success that we see around us,",
-    "those we have grown to recognize as markers of a successful life",
+    "those we have grown to recognize as markers of a successful life.",
   ],
   [
-    "But these frequently do not ring true to us, deep in our core",
+    "But trappings are called trappings for a reason.",
+  ],
+  [
+    "And they frequently do not ring true to us, deep in our core",
   ],
   [
     "They feel like someone else's dream we're constantly striving to make our own",
