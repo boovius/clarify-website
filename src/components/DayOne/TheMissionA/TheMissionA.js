@@ -4,6 +4,8 @@ import Container from '../../Container/Container'
 import { primaryColor, secondaryColor } from '../DayOne.styles'
 import RoundButton from '../../RoundButton'
 import SpanLeadingSpace from '../../SpanLeadingSpace'
+import DelayedWord from '../../DelayedWord'
+
 
 const OneTwo = () => (
   <div className='one-two'>
@@ -11,9 +13,11 @@ const OneTwo = () => (
       <RoundButton
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
-      >our mission</RoundButton>
+      >the mission</RoundButton>
     </Link>
-    <SpanLeadingSpace>...</SpanLeadingSpace>
+    <SpanLeadingSpace>
+      <DelayedWord word="..."/>
+    </SpanLeadingSpace>
   </div>
 )
 

@@ -10,10 +10,10 @@ const OneThree = () => (
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
         disabled
-      >our mission</RoundButton>
-    <SpanLeadingSpace>take a directed first step</SpanLeadingSpace>
+      >the mission</RoundButton>
+    <SpanLeadingSpace>to take a directed first step</SpanLeadingSpace>
     <p>towards a life</p>
-    <p>of our highest fulfillment.</p>
+    <p>that lights us up.</p>
     <DownArrowLink next='4' />
   </div>
 )
