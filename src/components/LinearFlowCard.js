@@ -6,7 +6,7 @@ import { css as glamor } from 'glamor'
 
 const breadCrumbStyleRule = glamor({
   position: 'absolute',
-  width: '100%',
+  width: '50%',
   bottom: '100px',
 })
 
