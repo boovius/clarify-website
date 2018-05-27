@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import { primaryColor, secondaryColor } from './DayOne/DayOne.styles'
 import { css as glamor } from 'glamor'
+import { darken } from 'polished'
 
 
 const Circle = styled.div`
@@ -15,12 +16,16 @@ const Circle = styled.div`
   ${ props => props.filled && css`
     background-color: ${secondaryColor};
     opacity: 1;
-    cursor: pointer;
   `}
 
   ${ props => props.link && css`
     height: 20px;
     width: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: ${darken(0.1, secondaryColor)};
+    }
   `}
 `
 
