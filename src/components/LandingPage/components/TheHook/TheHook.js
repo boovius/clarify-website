@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../../../Container/Container';
+import Container from '../../../Container';
 import './TheHook.css';
 import backgroundImage from '../../../../assets/images/sand-dunes-desert-night.jpg'
 

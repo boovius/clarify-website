@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom"
-import Container from '../Container/Container'
+import Container from '../Container'
 import TitleCard from './TitleCard/TitleCard'
 import LinearFlowCard from '../LinearFlowCard'
 import './DayOne.css'
