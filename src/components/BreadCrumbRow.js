@@ -4,6 +4,8 @@ import styled, { css } from 'styled-components'
 import { primaryColor, secondaryColor } from './DayOne/DayOne.styles'
 import { css as glamor } from 'glamor'
 import { darken } from 'polished'
+import footprints from '../assets/icons/footprints-horizontal.svg'
+import lighthouse from '../assets/icons/lighthouse.svg'
 
 
 const Circle = styled.div`
@@ -29,24 +31,32 @@ const Circle = styled.div`
   `}
 `
 
-const PastBreadCrumbs = ({index}) => {
+const PastBreadCrumbs = ({startingIndex, index}) => {
   let breadcrumbs = []
-  for (let i = 0; i < index - 1; i++) {
-    breadcrumbs.push(<Circle filled={true} />)
+  for (let i = 0; i < index - startingIndex; i++) {
+    breadcrumbs.push(<Circle key={i} />)
   }
   return breadcrumbs
 }
 
+const footprintStyle = glamor({
+  height: '30px',
+  width: '30px'
+})
+
 const PresentBreadCrumb = ({index}) => (
   <Link to={`${parseInt(index)+1}`}>
-    <Circle link={true} filled={true}/>
+    <img className={footprintStyle} src={footprints} />
   </Link>
 )
 
-const FutureBreadCrumbs = ({length, index}) => {
+const FutureBreadCrumbs = ({length, startingIndex, index}) => {
   let breadcrumbs = []
-  for (let i = 0; i < length - index + 1; i++) {
-    breadcrumbs.push(<Circle filled={false} />)
+  const futureCrumbLength = startingIndex + length - index - 1
+  for (let i = 0; i < futureCrumbLength; i++) {
+    i == futureCrumbLength - 1 ?
+    breadcrumbs.push(<img key={i} className={footprintStyle} src={lighthouse} />) :
+    breadcrumbs.push(<div key={i}/>)
   }
   return breadcrumbs
 }

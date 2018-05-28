@@ -7,26 +7,17 @@ import './DayOne.css'
 import cards from './cards'
 
 
-const problemFlow = (match) => cards.problem.map((messages, cardIndex) =>
-  <Route key={cardIndex} path={`${match.url}/${2 + cardIndex}`} render={
+const cardFlow = (match, cards, startingIndex) => cards.map((messages, cardIndex) =>
+  <Route key={cardIndex} path={`${match.url}/${startingIndex + cardIndex}`} render={
     (props) => (
-      <LinearFlowCard {...props} length={cards.problem.length} day='one' index={`${2 + cardIndex}`} messages={messages} />
-    )
-  }/>
-)
-
-const perspectiveFlow = (match) => cards.perspective.map((messages, cardIndex) =>
-  <Route key={cardIndex} path={`${match.url}/${2 + cardIndex}`} render={
-    (props) => (
-      <LinearFlowCard {...props} length={cards.perspective.length} day='one' index={`${2 + cardIndex}`} messages={messages} />
-    )
-  }/>
-)
-
-const exerciseFlow = (match) => cards.exercise.map((messages, cardIndex) =>
-  <Route key={cardIndex} path={`${match.url}/${2 + cardIndex}`} render={
-    (props) => (
-      <LinearFlowCard {...props} length={cards.exercise.length} day='one' index={`${2 + cardIndex}`} messages={messages} />
+      <LinearFlowCard
+        {...props}
+        length={cards.length}
+        day='one'
+        startingIndex={startingIndex}
+        index={`${startingIndex + cardIndex}`}
+        messages={messages}
+      />
     )
   }/>
 )
@@ -36,9 +27,9 @@ const DayOne = ({match}) => (
     <Container>
       <Switch>
         <Route path={`${match.url}/1`} component={TitleCard} />
-        {problemFlow(match)}
-        {perspectiveFlow(match)}
-        {exerciseFlow(match)}
+        {cardFlow(match, cards.problem, 2)}
+        {cardFlow(match, cards.perspective, 2+cards.problem.length)}
+        {cardFlow(match, cards.exercise, 2+cards.problem.length+cards.perspective.length)}
         <Redirect to={`${match.url}/1`} />
       </Switch>
     </Container>

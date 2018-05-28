@@ -10,7 +10,7 @@ const breadCrumbStyleRule = glamor({
   bottom: '100px',
 })
 
-const LinearFlowCard = ({length, day, index, messages}) => (
+const LinearFlowCard = ({length, day, startingIndex, index, messages}) => (
   <div className={`card-flow ${day}-${index}`}>
     {messages.map((message,i) => (
       <Delayed key={i} mounted={true} mountAfter={(i+1)*500}>
@@ -33,7 +33,12 @@ const LinearFlowCard = ({length, day, index, messages}) => (
         transitionEnter={false}
         transitionLeave={false}
       >
-        <BreadCrumbRow styleRule={breadCrumbStyleRule} length={length} index={index} />
+        <BreadCrumbRow
+          styleRule={breadCrumbStyleRule}
+          length={length}
+          startingIndex={startingIndex}
+          index={index}
+        />
       </ReactCSSTransitionGroup>
     </Delayed>
   </div>
