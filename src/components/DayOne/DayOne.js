@@ -1,13 +1,12 @@
 import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom"
-import Container from '../Container'
 import TitleCard from './TitleCard/TitleCard'
 import LinearFlowCard from '../LinearFlowCard'
 import './DayOne.css'
 import cards from './cards'
 
 
-const cardFlow = (match, cards, startingIndex) => cards.map((messages, cardIndex) =>
+const cardFlow = (match, cards, startingIndex, phase) => cards.map((messages, cardIndex) =>
   <Route key={cardIndex} path={`${match.url}/${startingIndex + cardIndex}`} render={
     (props) => (
       <LinearFlowCard
@@ -17,6 +16,7 @@ const cardFlow = (match, cards, startingIndex) => cards.map((messages, cardIndex
         startingIndex={startingIndex}
         index={`${startingIndex + cardIndex}`}
         messages={messages}
+        phase={phase}
       />
     )
   }/>
@@ -24,15 +24,13 @@ const cardFlow = (match, cards, startingIndex) => cards.map((messages, cardIndex
 
 const DayOne = ({match}) => (
   <div id='day-1'>
-    <Container>
-      <Switch>
-        <Route path={`${match.url}/1`} component={TitleCard} />
-        {cardFlow(match, cards.problem, 2)}
-        {cardFlow(match, cards.perspective, 2+cards.problem.length)}
-        {cardFlow(match, cards.exercise, 2+cards.problem.length+cards.perspective.length)}
-        <Redirect to={`${match.url}/1`} />
-      </Switch>
-    </Container>
+    <Switch>
+      <Route path={`${match.url}/1`} component={TitleCard} />
+      {cardFlow(match, cards.problem, 2, 'problem')}
+      {cardFlow(match, cards.perspective, 2+cards.problem.length, 'perspective')}
+      {cardFlow(match, cards.exercise, 2+cards.problem.length+cards.perspective.length, 'exercise')}
+      <Redirect to={`${match.url}/1`} />
+    </Switch>
   </div>
 )
 

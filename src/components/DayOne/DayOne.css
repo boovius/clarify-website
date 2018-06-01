@@ -1,9 +1,24 @@
 #day-1 {
-  color: white;
   position: absolute;
   height: 100%;
   width: 100%;
+  color: white;
   background-color: #f2952b;
+}
+
+.card-flow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.problem {
+}
+.perspective {
+  background-color: #c67b25;
+}
+.exercise {
+  background-color: #a0631c;
 }
 
 .angle-double-down {
