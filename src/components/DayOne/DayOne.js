@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom"
-import TitleCard from './TitleCard/TitleCard'
 import LinearFlowCard from '../LinearFlowCard'
+import TitleCard from './TitleCard'
 import './DayOne.css'
 import cards from './cards'
 
