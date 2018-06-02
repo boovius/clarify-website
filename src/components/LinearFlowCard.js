@@ -1,7 +1,6 @@
 import React from 'react'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Container from './Container'
-import Delayed from 'react-delayed'
+import DelayedFadeIn from './DelayedFadeIn'
 import BreadCrumbRow from './BreadCrumbRow'
 import { css as glamor } from 'glamor'
 
@@ -12,36 +11,20 @@ const breadCrumbStyleRule = glamor({
 })
 
 const fadeInMessages = (messages) => (messages.map((message,i) =>
-  <Delayed key={i} mounted={true} mountAfter={(i+1)*500}>
-    <ReactCSSTransitionGroup
-      transitionName='message'
-      transitionAppearTimeout={500}
-      transitionAppear={true}
-      transitionEnter={false}
-      transitionLeave={false}
-    >
-      <p>{message}</p>
-    </ReactCSSTransitionGroup>
-  </Delayed>
+  <DelayedFadeIn key={i} transition='message' index={i} timeout={500}>
+    <p>{message}</p>
+  </DelayedFadeIn>
 ))
 
 const fadeInBreadCrumbRow = (length, index, startingIndex, messages) => (
-  <Delayed mounted={true} mountAfter={(messages.length + 1) * 500}>
-    <ReactCSSTransitionGroup
-      transitionName='message'
-      transitionAppearTimeout={500}
-      transitionAppear={true}
-      transitionEnter={false}
-      transitionLeave={false}
-    >
-      <BreadCrumbRow
-        styleRule={breadCrumbStyleRule}
-        length={length}
-        startingIndex={startingIndex}
-        index={index}
-      />
-    </ReactCSSTransitionGroup>
-  </Delayed>
+  <DelayedFadeIn transition='message' index={messages.length} timeout={500}>
+    <BreadCrumbRow
+      styleRule={breadCrumbStyleRule}
+      length={length}
+      startingIndex={startingIndex}
+      index={index}
+    />
+  </DelayedFadeIn>
 )
 
 const LinearFlowCard = ({length, day, startingIndex, index, messages, phase}) => (
