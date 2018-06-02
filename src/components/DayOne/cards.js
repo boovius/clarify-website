@@ -1,175 +1,68 @@
+//////
+// This holds the core data to be used in the Day 1 module
+// It consists of an object with three properties: problem, perspective, and exercise
+// Each property holds a multi-dimensional array (array of arrays)
+// With the child arrays holding a series of React components (or html primatives)
+// Note: React is a necessary import here for use of jsx
+//////
+import React from 'react'
+import DelayedWord from '../DelayedWord'
+
 const cards = {
   problem: [
     [
-      'Problem:',
+      <h3>So:</h3>,
+      <p>We want more out of life</p>,
+      <p>than what we're currently experiencing</p>
     ],
     [
-      "Our life is not what we would like it to be",
+      <p>But we may not know which direction to go next.</p>
     ],
     [
-      "Or we just want something more of life.",
-    ],
-    [
-      "Most of us find that in today's world, our basic needs are accounted for.",
-    ],
-    [
-      "Things like:",
-      "Food",
-      "Shelter",
-      "Comfort",
-      "Some leisure time",
-    ],
-    [
-      'Many of us have grown up with a sense that we "could be anything we want".',
-    ],
-    [
-      "But then for nearly all of us",
-    ],
-    [
-      "we discover that life as an adult is not",
-      "what we had envisioned it would be when we were kids.",
-    ],
-    [
-      "It feels like we've been mislead.",
-      "Or lead on.",
-    ],
-    [
-      "Almost like we've been duped", 
-      "or cheated. ",
-    ],
-    [
-      "And we carry that feeling around with us",
-      "in our day to day lives",
-    ],
-    [
-      "going from home to work and back again.",
-    ],
-    [
-      "And back again.",
-      "And again.",
-      "And again.",
-      "And again.",
-      "And again.",
-      "And again.",
-      "....",
-    ],
-    [
-      "We attempt to achieve the trappings of success that we see around us,",
-      "those we have grown to recognize as markers of a successful life.",
-    ],
-    [
-      "But trappings are called trappings for a reason.",
-    ],
-    [
-      "And they frequently do not ring true to us, deep in our core",
-    ],
-    [
-      "They feel like someone else's dream we're constantly striving to make our own",
-    ],
-    [
-      "So you may find yourself wondering: ",
-    ],
-    [
-      "am I wasting my life?",
-    ],
-    [
-      "is this all there is? ",
-    ],
-    [
-      "aren't I meant for something more? ",
+      <p>Or possibly what we even want.</p>
     ],
   ],
   perspective: [
     [
-      "You've come to the right place.",
+      <p>But what if things were different?</p>
     ],
     [
-      "Yes",
+      <span>What if instead of feeling lost</span>,
+      <span> .</span>,
+      <span>.</span>,
+      <span>.</span>,
     ],
     [
-      "You are meant to for something more."
-    ],
-    [
-      "You're meant to live a life uniquely your own.",
-    ],
-    [
-      "There is no one out there exactly like you.",
-    ],
-    [
-      "You actually are special.",
-    ],
-    [
-      "And what is meaningful to me will not,",
-      "and should not,",
-      "be meaningful to you.",
-    ],
-    [
-      "There is no one grand purpose to life.",
-    ],
-    [
-      "We each have our own meaning to our existence.",
-    ],
-    [
-      "But this unique meaning we each have does not come from discovering a magic hidden treasure.",
-    ],
-    [
-      "It is far more simply",
-      "(and maybe more boringly),",
-      "an act of defining it.",
-    ],
-    [
-      "And then living into it.",
-    ],
-    [
-      "So to define our meaning to ourselves in a way that matters we have to ask ourselves some tough questions.",
-    ],
-    [
-      "Questions like:",
-      "What really matters to me?",
-      "What truly matters most?",
-    ],
-    [
-      "We need to consider the totality of our lives.",
-    ],
-    [
-      "Our lives as a whole.",
-    ],
-    [
-      "And consider these questions from that perspective.",
-    ],
+      <p>You were heading towards a life that lit you up?</p>
+    ]
   ],
   exercise: [
     [
-      "So...",
+      <DelayedWord word="Exercise"/>,
+      <span>: </span>,
+      <span>.</span>,
+      <span>.</span>,
+      <span>.</span>,
     ],
     [
-      "To do this,",
-      "we're going to imagine our lives at the very end of them.",
+      <p>Imagine you are at your funeral</p>
     ],
     [
-      "We're going to blast forward many, many years",
+      <p>a dear friend gets up</p>,
+      <p>and gives an incredible eulogy for you.</p>
     ],
     [
-      "You find yourself at your funeral",
+      <p>You discover you have lived your greatest life.</p>,
     ],
     [
-      "You're able to walk, move around, and observe what people are saying",
+      <h3 style={{color: 'black'}}>Write down:</h3>,
+      <p>What do they say about you,</p>,
+      <p>what you did with your life,</p>,
+      <p>and how you affected others?</p>,
     ],
-    [
-      "A dear loved one gets up and gives a beautiful eulogy for you",
-    ],
-    [
-      "You cannot believe what you're hearing",
-    ],
-    [
-      "It seems you've lived your greatest life",
-    ],
-    [
-      "So ...",
-    ],
-    [
-      "How did you live your life?",
-    ],
+
+    //Look over this eulogy.  Pick out the vital points from it and the values that define commonalities between these points.  In short, how did you live your life?
+
   ]
 }
 

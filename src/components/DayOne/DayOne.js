@@ -6,7 +6,7 @@ import './DayOne.css'
 import cards from './cards'
 
 
-const cardFlow = (match, cards, startingIndex, phase) => cards.map((messages, cardIndex) =>
+const cardFlow = (match, cards, startingIndex, phase) => cards.map((elements, cardIndex) =>
   <Route key={cardIndex} path={`${match.url}/${startingIndex + cardIndex}`} render={
     (props) => (
       <LinearFlowCard
@@ -15,7 +15,7 @@ const cardFlow = (match, cards, startingIndex, phase) => cards.map((messages, ca
         day='one'
         startingIndex={startingIndex}
         index={`${startingIndex + cardIndex}`}
-        messages={messages}
+        elements={elements}
         phase={phase}
       />
     )
