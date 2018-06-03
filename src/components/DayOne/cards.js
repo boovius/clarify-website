@@ -19,10 +19,13 @@ const cards = {
       <p>We want more out of life.</p>,
     ],
     [
-      <p>But we may not know which direction to go next.</p>
+      <h3>However</h3>
     ],
     [
-      <p>Or possibly we do not know what we even want.</p>
+      <p>We may not know which direction to go next.</p>
+    ],
+    [
+      <p>Or possibly we do not even know what we want.</p>
     ],
   ],
   perspective: [
@@ -59,7 +62,7 @@ const cards = {
       <TheMissionB />
     ],
     [
-      <p>To do this we're going to need gain some more clarity</p>,
+      <p>To do this we're going to need to gain some more clarity</p>,
       <p>on what are our core values.</p>
     ],
     [
