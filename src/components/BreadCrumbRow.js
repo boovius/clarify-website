@@ -33,7 +33,7 @@ const PastBreadCrumbs = ({startingIndex, index}) => {
 }
 
 const PresentBreadCrumb = ({index}) => (
-  <Link to={`${parseInt(index)+1}`}>
+  <Link to={`${parseInt(index, 10)+1}`}>
     <Footprints pathStyles={pathStyles} hoverStyles={hoverStyles}/>
   </Link>
 )
