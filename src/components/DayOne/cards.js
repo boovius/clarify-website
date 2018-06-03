@@ -44,7 +44,8 @@ const cards = {
       <p>that excited you?</p>,
     ],
     [
-      <span>Where your day to day held meaning</span>,
+      <p>Where each day</p>,
+      <span>in your day to day holds meaning</span>,
       <span> .</span>,
       <span>.</span>,
       <span>.</span>,
@@ -58,10 +59,23 @@ const cards = {
       <TheMissionB />
     ],
     [
-      <p>Imagine you are at your funeral</p>
+      <p>To do this we're going to need gain some more clarity</p>,
+      <p>on what are our core values.</p>
     ],
     [
-      <p>a dear friend gets up</p>,
+      <h3>So ...</h3>
+    ],
+    [
+      <p>Imagine you are whisked away far, far into the future.</p>,
+    ],
+    [
+      <p>Just after your own death.</p>
+    ],
+    [
+      <p>And you at your own funeral.</p>
+    ],
+    [
+      <p>A dear friend gets up</p>,
       <p>and gives a eulogy for you.</p>
     ],
     [
@@ -69,7 +83,7 @@ const cards = {
       <p>You cannot believe what you are hearing.</p>,
     ],
     [
-      <p>You discover you have lived your greatest life.</p>,
+      <p>But you discover that you have lived your greatest life.</p>,
     ],
     [
       <p>What do they say about you,</p>,

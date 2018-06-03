@@ -14,7 +14,6 @@ const OneThree = () => (
     <SpanLeadingSpace>to take a directed first step</SpanLeadingSpace>
     <p>towards a life</p>
     <p>that lights us up.</p>
-    <DownArrowLink next='4' />
   </div>
 )
 

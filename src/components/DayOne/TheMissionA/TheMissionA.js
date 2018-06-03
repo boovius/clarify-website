@@ -8,12 +8,11 @@ import DelayedWord from '../../DelayedWord'
 
 const TheMissionA = () => (
   <div className='one-two'>
-    <Link to='3'>
-      <RoundButton
-        primaryColor={primaryColor}
-        secondaryColor={secondaryColor}
-      >the mission</RoundButton>
-    </Link>
+    <RoundButton
+      primaryColor={primaryColor}
+      secondaryColor={secondaryColor}
+      disabled
+    >the mission</RoundButton>
     <SpanLeadingSpace>
       <DelayedWord word="..."/>
     </SpanLeadingSpace>
