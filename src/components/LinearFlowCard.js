@@ -11,7 +11,6 @@ const breadCrumbStyleRule = glamor({
 })
 
 const fadeInElements = (elements) => {
-  console.log('elements', elements)
   return (elements.map((element,i) =>
     <DelayedFadeIn key={i} transition='message' index={i} timeout={500}>
       {element}

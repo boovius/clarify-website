@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import Container from '../../Container/Container'
 import { primaryColor, secondaryColor } from '../DayOne.styles'
 import RoundButton from '../../RoundButton'
 import SpanLeadingSpace from '../../SpanLeadingSpace'
 import DelayedWord from '../../DelayedWord'
 
 
-const OneTwo = () => (
+const TheMissionA = () => (
   <div className='one-two'>
     <Link to='3'>
       <RoundButton
@@ -21,4 +20,4 @@ const OneTwo = () => (
   </div>
 )
 
-export default OneTwo
+export default TheMissionA

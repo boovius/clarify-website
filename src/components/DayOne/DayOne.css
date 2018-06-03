@@ -12,8 +12,6 @@
   width: 100%;
 }
 
-.problem {
-}
 .perspective {
   background-color: #c67b25;
 }
@@ -38,4 +36,20 @@
   cursor: default;
   opacity: .4;
   margin-left: 80%;
+}
+
+.light-beams {
+  fill: yellow;
+  animation-duration: 1s;
+  animation-name: fadeInOut;
+  animation-iteration-count: infinite;
+}
+
+@keyfames fadeInOut {
+  from: {
+    opacity: 0;
+  }
+  to: {
+    opacity: 1;
+  }
 }

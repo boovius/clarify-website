@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled, { css } from 'styled-components'
-import { primaryColor, secondaryColor } from './DayOne/DayOne.styles'
+import styled from 'styled-components'
+import { secondaryColor } from './DayOne/DayOne.styles'
 import { css as glamor } from 'glamor'
-import { darken } from 'polished'
-import footprints from '../assets/icons/footprints-horizontal.svg'
-import lighthouse from '../assets/icons/lighthouse.svg'
+import Footprints from '../assets/icons/footprints'
+import Lighthouse from '../assets/icons/lighthouse'
 
 
 const Circle = styled.div`
@@ -14,22 +13,16 @@ const Circle = styled.div`
   opacity: 0.4;
   height: 10px;
   width: 10px;
-
-  ${ props => props.filled && css`
-    background-color: ${secondaryColor};
-    opacity: 1;
-  `}
-
-  ${ props => props.link && css`
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: ${darken(0.1, secondaryColor)};
-    }
-  `}
 `
+const pathStyles = glamor({
+  fill: 'white',
+  transition: 'opacity .25s linear'
+})
+
+const hoverStyles = glamor({
+  opacity: .4,
+  transition: 'opacity .25s linear'
+})
 
 const PastBreadCrumbs = ({startingIndex, index}) => {
   let breadcrumbs = []
@@ -39,14 +32,9 @@ const PastBreadCrumbs = ({startingIndex, index}) => {
   return breadcrumbs
 }
 
-const footprintStyle = glamor({
-  height: '30px',
-  width: '30px'
-})
-
 const PresentBreadCrumb = ({index}) => (
   <Link to={`${parseInt(index)+1}`}>
-    <img className={footprintStyle} src={footprints} />
+    <Footprints pathStyles={pathStyles} hoverStyles={hoverStyles}/>
   </Link>
 )
 
@@ -54,8 +42,8 @@ const FutureBreadCrumbs = ({length, startingIndex, index}) => {
   let breadcrumbs = []
   const futureCrumbLength = startingIndex + length - index - 1
   for (let i = 0; i < futureCrumbLength; i++) {
-    i == futureCrumbLength - 1 ?
-    breadcrumbs.push(<img key={i} className={footprintStyle} src={lighthouse} />) :
+    i === futureCrumbLength - 1 ?
+    breadcrumbs.push(<Lighthouse key={i} />) :
     breadcrumbs.push(<div key={i}/>)
   }
   return breadcrumbs
