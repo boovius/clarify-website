@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
-import LandingPage from './components/LandingPage/LandingPage';
-import IdentifyingUser from './components/IdentifyingUser/IdentifyingUser';
-import TheSolution from './components/TheSolution/TheSolution';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import LandingPage from './components/LandingPage/LandingPage';
+import DayOne from './components/DayOne/DayOne';
+import fontawesome from '@fortawesome/fontawesome'
+import faAngleDoubleDown from '@fortawesome/fontawesome-free-solid/faAngleDoubleDown'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <LandingPage />
-        <IdentifyingUser />
-        <TheSolution />
-      </div>
-    );
-  }
-}
+fontawesome.library.add(faAngleDoubleDown)
+
+const App = () => (
+  <Router>
+    <div className="App">
+      <Route exact path="/" component={LandingPage} />
+      <Route path="/day-1" component={DayOne} />
+    </div>
+  </Router>
+);
 
 export default App;

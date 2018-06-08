@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Container from '../Container/Container';
+import Container from '../../../Container';
 import './IdentifyingUser.css';
-import onEdgeImage from '../../assets/images/on_the_edge.png'
-import * as SC from '../../assets/styles/StyleConstants'
+import onEdgeImage from '../../../../assets/images/on_the_edge.png'
+import * as SC from '../../../../assets/styles/StyleConstants'
 
 
 const imageStyles = {

@@ -1,0 +1,55 @@
+#day-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #f2952b;
+}
+
+.card-flow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.perspective {
+  background-color: #c67b25;
+}
+.exercise {
+  background-color: #a0631c;
+}
+
+.angle-double-down {
+  cursor: pointer;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+}
+
+.angle-double-down:hover {
+  color: #f9e9d6;
+}
+
+.angle-double-down-marker {
+  cursor: default;
+  opacity: .4;
+  margin-left: 80%;
+}
+
+.light-beams {
+  fill: yellow;
+  animation-duration: 1s;
+  animation-name: fadeInOut;
+  animation-iteration-count: infinite;
+}
+
+@keyfames fadeInOut {
+  from: {
+    opacity: 0;
+  }
+  to: {
+    opacity: 1;
+  }
+}
