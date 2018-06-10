@@ -39,6 +39,10 @@ const cards = {
       <span>What if instead of feeling lost</span>,
     ],
     [
+      <p>You felt centered</p>,
+      <span>And directed</span>
+    ],
+    [
       <p>You were heading towards a life</p>,
       <p>that lit you up?</p>,
     ],
@@ -48,7 +52,7 @@ const cards = {
     ],
     [
       <p>Where each day</p>,
-      <span>in your day to day holds meaning</span>,
+      <span>in your life held the possiblity of being purposeful</span>,
       <span> .</span>,
       <span>.</span>,
       <span>.</span>,
@@ -79,14 +83,20 @@ const cards = {
     ],
     [
       <p>A dear friend gets up</p>,
-      <p>and gives a eulogy for you.</p>
     ],
     [
-      <p>It's incredible.</p>,
-      <p>You cannot believe what you are hearing.</p>,
+      <p>This is a friend you have not met yet</p>,
     ],
     [
-      <p>But you discover that you have lived your greatest life.</p>,
+      <p>But it is evident by their words and emotion that they will come to know you quite well</p>,
+    ],
+    [
+      <p>You listen to your friend's words.</p>,
+      <p>And you cannot believe what you are hearing.</p>,
+    ],
+    [
+      <p>It seems that you have lived your greatest life.</p>,
+      <p>Abundant in meaning and joy.</p>,
     ],
     [
       <p>What do they say about you,</p>,
