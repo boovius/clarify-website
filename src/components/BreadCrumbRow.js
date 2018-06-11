@@ -43,14 +43,23 @@ const breadCrumbLinkStyles =  glamor({
 })
 
 let bounce = glamor.keyframes({ 
-  '0%': { transform: 'scale(1)', opacity: 1 },
-  '60%': { transform: 'scale(.8)', opacity: .4},
-  '100%': { transform: 'scale(1)', opacity: 1}
+  '0%': { transform: 'scale(1)', opacity: .8 },
+  '60%': { transform: 'scale(.9)', opacity: .6},
+  '100%': { transform: 'scale(1)', opacity: .8}
+})
+let bigBounce = glamor.keyframes({ 
+  '0%': { transform: 'scale(1)'},
+  '60%': { transform: 'scale(1.2)'},
+  '100%': { transform: 'scale(1)'}
 })
 
 const arrowStyles =  glamor({
   marginLeft: '0.5em',
   animation: `${bounce} 2s infinite`,
+  transition: 'all .4s ease-in-out',
+  ':hover': {
+    animation: `${bigBounce} 2s infinite`,
+  }
 })
 
 const PresentBreadCrumb = ({index}) => (
