@@ -37,17 +37,14 @@ const breadCrumbLinkStyles =  glamor({
   display: 'flex',
   alignItems: 'center',
   color: 'white',
-  ':hover': {
-    opacity: 1
-  }
 })
 
-let bounce = glamor.keyframes({ 
+const bounce = glamor.keyframes({
   '0%': { transform: 'scale(1)', opacity: .8 },
   '60%': { transform: 'scale(.9)', opacity: .6},
   '100%': { transform: 'scale(1)', opacity: .8}
 })
-let bigBounce = glamor.keyframes({ 
+const bigBounce = glamor.keyframes({
   '0%': { transform: 'scale(1)'},
   '60%': { transform: 'scale(1.2)'},
   '100%': { transform: 'scale(1)'}
