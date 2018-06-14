@@ -7,6 +7,7 @@
 //////
 import React from 'react'
 import DelayedWord from '../DelayedWord'
+import DelayedFadeInSet from '../DelayedFadeInSet'
 import TheMissionA from './TheMissionA/TheMissionA'
 import TheMissionB from './TheMissionB/TheMissionB'
 
@@ -102,13 +103,28 @@ const cards = {
       <p>What do they say about you,</p>,
       <p>what you did with your life,</p>,
       <p>and how you affected others?</p>,
-      <p
+      <div
         style={
           {color: 'black', textAlign: 'center', marginTop: '5em', textTransform: 'uppercase', fontWeight: 'bold'}
         }
       >
         <DelayedWord word="write this down" />
-      </p>,
+        <div
+          style={
+            {fontSize: '.8em'}
+          }
+        >
+          <DelayedFadeInSet
+            transition='message'
+            index={1}
+            timeout={500}
+          >
+            <p>Take a blank sheet of paper</p>
+            <p>And set a timer for 10 minutes</p>
+            <h2>Go</h2>
+          </DelayedFadeInSet>
+        </div>
+      </div>,
     ],
 
     //Look over this eulogy.  Pick out the vital points from it and the values that define commonalities between these points.  In short, how did you live your life?
