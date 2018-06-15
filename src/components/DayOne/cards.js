@@ -9,25 +9,34 @@ import React from 'react'
 import DelayedWord from '../DelayedWord'
 import DelayedFadeIn from '../DelayedFadeIn'
 import DelayedFadeInSet from '../DelayedFadeInSet'
-import TheMissionA from './TheMissionA/TheMissionA'
-import TheMissionB from './TheMissionB/TheMissionB'
 
 const cards = {
   problem: [
     [
       <h3 style={{color: 'black'}}>
-        <DelayedWord word="The problem: "/>
+        <DelayedWord word="Our struggle: "/>
       </h3>,
-      <p>We want more out of life.</p>,
+      <p>Life is pretty good</p>,
+      <p>or it is just "ok"</p>
     ],
     [
-      <h3>However</h3>
+      <p>But we have a sense that "ok" just isn't quite good enough.</p>
     ],
     [
-      <p>We may not know which direction to go next.</p>
+      <p>Yet we may not know which direction to go next.</p>
     ],
     [
-      <p>Or possibly we do not even know what we want.</p>
+      <p>Or possibly, we do not even know what we want.</p>
+    ],
+    [
+      <p>It can seem like there are an infinite number of choices out there.</p>,
+      <p>And how are we to know which is the right one?</p>
+    ],
+    [
+      <p>But life is "ok" right?</p>
+    ],
+    [
+      <p>So it can't be <span style={{fontStyle: 'italic'}}>that</span> bad?</p>
     ],
   ],
   perspective: [
@@ -62,20 +71,23 @@ const cards = {
   ],
   exercise: [
     [
-      <TheMissionA />
+      <h3>Our Mission:</h3>,
     ],
     [
-      <TheMissionB />
+      <h3>Our Mission:</h3>,
+      <p>To take a directed,</p>,
+      <p>first step,</p>,
+      <p>towards a life,</p>,
+      <p>that lights us up.</p>,
     ],
     [
       <p>To do this we're going to need to gain some more clarity</p>,
-      <p>on what are our core values.</p>
+      <p>on what are our core values.</p>,
+      <p>What truly matters to us.</p>
     ],
     [
-      <h3>So ...</h3>
-    ],
-    [
-      <p>Imagine you are whisked away far, far into the future.</p>,
+      <h3>So imagine...</h3>,
+      <p>you are whisked away far, far into the future.</p>,
     ],
     [
       <p>Just after your own death.</p>
