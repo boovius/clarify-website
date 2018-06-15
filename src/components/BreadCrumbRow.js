@@ -5,6 +5,7 @@ import { secondaryColor } from './DayOne/DayOne.styles'
 import { css as glamor } from 'glamor'
 import Footprints from '../assets/icons/footprints'
 import Lighthouse from '../assets/icons/lighthouse'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 
 const Circle = styled.div`
@@ -27,14 +28,41 @@ const hoverStyles = glamor({
 const PastBreadCrumbs = ({startingIndex, index}) => {
   let breadcrumbs = []
   for (let i = 0; i < index - startingIndex; i++) {
-    breadcrumbs.push(<Circle key={i} />)
+    breadcrumbs.push(<Footprints key={i} pathStyles={hoverStyles} hoverStyles='' size={40}/>)
   }
   return breadcrumbs
 }
 
+const breadCrumbLinkStyles =  glamor({
+  display: 'flex',
+  alignItems: 'center',
+  color: 'white',
+})
+
+const bounce = glamor.keyframes({
+  '0%': { transform: 'scale(1)', opacity: .8 },
+  '60%': { transform: 'scale(.9)', opacity: .6},
+  '100%': { transform: 'scale(1)', opacity: .8}
+})
+const bigBounce = glamor.keyframes({
+  '0%': { transform: 'scale(1)'},
+  '60%': { transform: 'scale(1.2)'},
+  '100%': { transform: 'scale(1)'}
+})
+
+const arrowStyles =  glamor({
+  marginLeft: '0.5em',
+  animation: `${bounce} 2s infinite`,
+  transition: 'all .4s ease-in-out',
+  ':hover': {
+    animation: `${bigBounce} 2s infinite`,
+  }
+})
+
 const PresentBreadCrumb = ({index}) => (
-  <Link to={`${parseInt(index, 10)+1}`}>
-    <Footprints pathStyles={pathStyles} hoverStyles={hoverStyles}/>
+  <Link to={`${parseInt(index, 10)+1}`} className={breadCrumbLinkStyles} >
+    <Footprints pathStyles={pathStyles} hoverStyles={hoverStyles} size={40}/>
+    <FontAwesomeIcon {...arrowStyles} size='2x' icon='arrow-circle-right' />
   </Link>
 )
 
