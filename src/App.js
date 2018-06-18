@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPage';
 import DayOne from './components/DayOne/DayOne';
+import DayTwo from './components/DayTwo/DayTwo';
 import fontawesome from '@fortawesome/fontawesome'
 import faAngleDoubleDown from '@fortawesome/fontawesome-free-solid/faAngleDoubleDown'
 import faArrowCircleRight from '@fortawesome/fontawesome-free-solid/faArrowCircleRight'
@@ -15,6 +16,7 @@ const App = () => (
     <div className="App">
       <Route exact path="/" component={LandingPage} />
       <Route path="/day-1" component={DayOne} />
+      <Route path="/day-2" component={DayTwo} />
     </div>
   </Router>
 );

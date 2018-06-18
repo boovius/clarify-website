@@ -1,0 +1,35 @@
+.card-flow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.perspective {
+  background-color: #c67b25;
+}
+.exercise {
+  background-color: #a0631c;
+}
+
+.angle-double-down {
+  cursor: pointer;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+}
+
+.angle-double-down:hover {
+  color: #f9e9d6;
+}
+
+.angle-double-down-marker {
+  cursor: default;
+  opacity: .4;
+  margin-left: 80%;
+}
+
+.footprints {
+  transform: rotate(90deg);
+}
