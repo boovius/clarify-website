@@ -14,12 +14,37 @@ import DelayedFadeInSet from '../DelayedFadeInSet'
 const cards = {
   problem: [
     [
-      <p>This is day 2</p>
+      <p>Too often we block ourselves from living into our dreams</p>,
+    ],
+    [
+      <p>Too often all we see is</p>,
+      <p>"I just can't because..."</p>
+    ],
+    [
+      <p>Something seems irresponsible about our brightest ideas</p>,
+    ],
+    [
+      <p>Like they seem incredible but we can't really do that, right?</p>,
     ]
   ],
   perspective: [
     [
-      <p>This will be very very fun</p>
+      <p>One’s man safe and reasonable is not another’s.</p>
+    ],
+    [
+      <p>And fundamentally there are no rules as to how one should live their life.</p>
+    ],
+    [
+      <p>Imagine a life where you were beholden to no one but yourself</p>,
+      <p>and where you had the resources at your ready disposal to put towards whatever you wanted.</p>
+    ],
+    [
+      <p>Would this vision not be the truest,</p>,
+      <p>highest,</p>,
+      <p>clearest vision of your desire?</p>,
+    ],
+    [
+      <p>What if this were your life?</p>
     ]
   ],
   exercise: [
