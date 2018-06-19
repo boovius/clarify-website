@@ -2,8 +2,8 @@ import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom"
 import LinearFlowCard from '../LinearFlowCard'
 import TitleCard from './TitleCard'
-import * as styles from './DayTwo.styles'
 import cards from './cards'
+import * as styles from './DayTwo.styles'
 import './DayTwo.css'
 
 

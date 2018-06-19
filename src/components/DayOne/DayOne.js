@@ -2,8 +2,9 @@ import React from 'react'
 import { Route, Switch, Redirect } from "react-router-dom"
 import LinearFlowCard from '../LinearFlowCard'
 import TitleCard from './TitleCard'
-import './DayOne.css'
 import cards from './cards'
+import * as styles from './DayOne.styles'
+import './DayOne.css'
 
 
 const cardFlow = (match, cards, startingIndex, phase) => cards.map((elements, cardIndex) =>
@@ -17,13 +18,14 @@ const cardFlow = (match, cards, startingIndex, phase) => cards.map((elements, ca
         index={`${startingIndex + cardIndex}`}
         elements={elements}
         phase={phase}
+        styles={styles}
       />
     )
   }/>
 )
 
 const DayOne = ({match}) => (
-  <div id='day-1'>
+  <div className={styles.baseStyles} id='day-1'>
     <Switch>
       <Route path={`${match.url}/1`} component={TitleCard} />
       {cardFlow(match, cards.problem, 2, 'problem')}

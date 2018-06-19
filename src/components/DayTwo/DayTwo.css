@@ -1,16 +1,3 @@
-.card-flow {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-.perspective {
-  background-color: #c67b25;
-}
-.exercise {
-  background-color: #a0631c;
-}
-
 .angle-double-down {
   cursor: pointer;
   font-size: 25px;

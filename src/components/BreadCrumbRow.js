@@ -8,13 +8,6 @@ import Lighthouse from '../assets/icons/lighthouse'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 
-const Circle = styled.div`
-  border-radius: 30px;
-  background-color: ${secondaryColor};
-  opacity: 0.4;
-  height: 10px;
-  width: 10px;
-`
 const pathStyles = glamor({
   fill: 'white',
   transition: 'opacity .25s linear'

@@ -3,7 +3,12 @@ import Container from './Container'
 import DelayedFadeIn from './DelayedFadeIn'
 import BreadCrumbRow from './BreadCrumbRow'
 import { css as glamor } from 'glamor'
-import { darken } from 'polished'
+
+const cardFlowStyles = glamor({
+  position: 'absolute',
+  height: '100%',
+  width: '100%',
+})
 
 const breadCrumbStyleRule = glamor({
   position: 'absolute',
@@ -31,7 +36,7 @@ const fadeInBreadCrumbRow = (length, index, startingIndex, delayIndex) => (
 )
 
 const LinearFlowCard = ({length, day, startingIndex, index, elements, phase, styles}) => (
-  <div className={`card-flow ${day}-${index} ${styles[phase]}`}>
+  <div className={`${cardFlowStyles} ${styles[phase]}`}>
     <Container>
       {fadeInElements(elements)}
       {fadeInBreadCrumbRow(length, index, startingIndex, elements.length)}

@@ -4,7 +4,7 @@ import Delayed from 'react-delayed'
 
 const DelayedFadeIn = ({transition, index, timeout, children}) =>
   children.map((child, i) => (
-    <Delayed mounted={true} mountAfter={(index+i+1)*timeout}>
+    <Delayed key={i} mounted={true} mountAfter={(index+i+1)*timeout}>
       <ReactCSSTransitionGroup
         transitionName={transition}
         transitionAppearTimeout={timeout}
