@@ -1,7 +1,8 @@
 import { css as glamor } from 'glamor'
 import { darken } from 'polished'
+import { burntSienna } from '../../assets/styles/colors'
 
-export const primaryColor = '#f2952b'
+export const primaryColor = burntSienna
 export const secondaryColor = 'white'
 
 export const perspective = glamor({backgroundColor: `${darken(0.05, primaryColor)}`})
