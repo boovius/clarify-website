@@ -14,42 +14,46 @@ import DelayedFadeInSet from '../DelayedFadeInSet'
 const cards = {
   problem: [
     [
-      <p>Too often we block ourselves from living into our dreams</p>,
+      <p>If we’re on a mission to create our own shoes, we’re going to need some material</p>
     ],
     [
-      <p>Too often all we see is</p>,
-      <p>"I just can't because..."</p>
+      <p>As this is a project to construct our lives, it is our most vital project.</p>,
+      <p>As such, it is crucial that we choose material that speaks to us.</p>
     ],
     [
-      <p>Something seems irresponsible about our brightest ideas</p>,
+      <p>Material either speaks to us or it doesn’t.</p>
     ],
-    [
-      <p>Like they seem incredible but we can't really do that, right?</p>,
-    ]
   ],
   perspective: [
     [
-      <p>One’s man safe and reasonable is not another’s.</p>
+      <p>Too often in creating our shoes, we choose from a very limited set of materials.</p>
     ],
     [
-      <p>And fundamentally there are no rules as to how one should live their life.</p>
+      <p>We look at the material that has made up our pasts</p>,
+      <p>Or we look at materials that can be created from the resources we feel are currently at our disposal.</p>,
+      <p>Or we consider materials that will not compromise the materials we currently have.</p>
     ],
     [
-      <p>Imagine a life where you were beholden to no one but yourself</p>,
-      <p>and where you had the resources at your ready disposal to put towards whatever you wanted.</p>
+      <p>But we’re here because our shoes no longer quite fit.</p>
     ],
     [
-      <p>Would this vision not be the truest,</p>,
-      <p>highest,</p>,
-      <p>clearest vision of your desire?</p>,
-    ],
-    [
-      <p>What if this were your life?</p>
+      <p>It is a requirement that we shed these materials now,</p>,
+      <p>as a snake sheds its skin,</p>,
+      <p>so that we can find new ones that better fit where we are now and where we want to go.</p>
     ]
   ],
   exercise: [
     [
-      <p>you will do some new fun stuff</p>,
+      <p>But what if we could upgrade?</p>,
+      <p>What if the scope of our materials was much wider?</p>
+    ],
+    [
+      <p>What could we do?</p>,
+      <p>What would we do?</p>,
+    ],
+    [
+      <p>What could we do?</p>,
+      <p>What would we do?</p>,
     ],
     [
       <h2>Your Challenge</h2>,
