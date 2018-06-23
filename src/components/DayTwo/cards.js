@@ -29,17 +29,26 @@ const cards = {
       <p>Too often in creating our shoes, we choose from a very limited set of materials.</p>
     ],
     [
-      <p>We look at the material that has made up our pasts</p>,
-      <p>Or we look at materials that can be created from the resources we feel are currently at our disposal.</p>,
-      <p>Or we consider materials that will not compromise the materials we currently have.</p>
+      <p>We look at the material of our pasts</p>,
     ],
     [
-      <p>But we’re here because our shoes no longer quite fit.</p>
+      <p>Or we look around at the material of our present</p>,
     ],
     [
-      <p>It is a requirement that we shed these materials now,</p>,
-      <p>as a snake sheds its skin,</p>,
-      <p>so that we can find new ones that better fit where we are now and where we want to go.</p>
+      <p>We tend to consider that which is "likely"</p>,
+      <p>rather than that which is possible</p>
+    ],
+    [
+      <p>We tend to consider that which feels "responsible"</p>,
+      <p>rather than what truly speaks to our hearts</p>
+    ],
+    [
+      <p>But remember we are here because our shoes no longer really fit.</p>
+    ],
+    [
+      <p>So that requires of us that we shed the materials of our old shoes,</p>,
+      <p>and like a snake sheds its skin,</p>,
+      <p>find new materials that better fit where we are now and where we want to go.</p>
     ]
   ],
   exercise: [
@@ -49,16 +58,38 @@ const cards = {
     ],
     [
       <p>What could we do?</p>,
+    ],
+    [
       <p>What would we do?</p>,
     ],
     [
-      <p>What could we do?</p>,
-      <p>What would we do?</p>,
+      <p>Imagine you were bequeathed a nearly unfathomable amount of money</p>,
+      <p>($10 million)</p>,
+      <p>from a lost relative, whom you never knew.</p>,
+    ],
+    [
+      <p>However, there are two stipulations for receiving the inheritance.</p>,
+    ],
+    [
+      <p>The first is that you cannot save or invest this money.</p>,
+      <p>You must spend it.</p>,
+    ],
+    [
+      <p>The second is that you cannot spend it on anything material</p>,
+      <p>e.g. you cannot buy a wonderful new house.</p>,
+    ],
+    [
+      <p>We’re after experiences.</p>,
+      <p>We’re after life.</p>,
     ],
     [
       <h2>Your Challenge</h2>,
+      <p style={{color: 'black'}}>Create visions of what you are doing in spending this money</p>,
       <p style={{color: 'black'}}>Take a blank sheet of paper</p>,
-      <p style={{color: 'black'}}>And set a timer for 10 minutes</p>,
+      <p style={{color: 'black'}}>Draw a heart in the center of your page</p>,
+      <p style={{color: 'black'}}>Set a timer for 10 minutes</p>,
+      <p style={{color: 'black'}}>And draw your visions in thought bubbles around the center</p>,
+      <p style={{color: 'black'}}>Then draw a line connecting each one to your center</p>,
       <div
         style={
           {textAlign: 'center', marginTop: '5em', fontWeight: 'bold'}
@@ -69,48 +100,20 @@ const cards = {
           index={1}
           timeout={500}
         >
-          <p style={{color: 'black', textTransform: 'uppercase', fontWeight: 'bold'}}><DelayedWord word="Now Write this Down"/></p>
-          <p>What does your friend say about you in this eulogy?</p>
-          <p>How you lived your life,</p>
-          <p>And how your presence affected others?</p>
+          <p style={{color: 'black', textTransform: 'uppercase', fontWeight: 'bold'}}><DelayedWord word="I am ...."/></p>
+          <p>You have $10 million</p>
+          <p>You must spend it</p>
+          <p>What are you doing?</p>
         </DelayedFadeInSet>
           <DelayedFadeIn
             transition='message'
             index={6}
             timeout={500}
           >
-            <p style={{color: 'black', fontSize: '.8em', fontWeight: 'bold'}}><DelayedWord word="Move forward when you have your eulogy"/></p>
+            <p style={{color: 'black', fontSize: '.8em', fontWeight: 'bold'}}><DelayedWord word="Move forward when you have your visions"/></p>
           </DelayedFadeIn>
       </div>,
     ],
-    [
-      <h2>Your Challenge</h2>,
-      <p>Now</p>,
-      <p>Look over your eulogy</p>,
-      <div
-        style={
-          {textAlign: 'center', marginTop: '5em', fontWeight: 'bold'}
-        }
-      >
-        <DelayedFadeInSet
-          transition='message'
-          index={1}
-          timeout={500}
-        >
-          <p style={{color: 'black', fontWeight: 'bold', textTransform: 'uppercase'}}><DelayedWord word="Ask yourself"/></p>
-          <p>What values are represented here, by this,</p>
-          <p>my greatest life lived?</p>
-          <p>What values can I pull out of this?</p>
-          <DelayedFadeIn
-            transition='message'
-            index={4}
-            timeout={500}
-          >
-            <p style={{color: 'black', fontSize: '.8em', fontWeight: 'bold'}}><DelayedWord word="Write these down (...try to keep it to five or less)"/></p>
-          </DelayedFadeIn>
-        </DelayedFadeInSet>
-      </div>
-    ]
   ]
 }
 

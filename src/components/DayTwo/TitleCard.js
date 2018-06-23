@@ -11,7 +11,7 @@ const TitleCard = ({match}) => (
     <div className='title-card'>
       <DelayedFadeInSet index={0} transition='message' timeout={500}>
         <p>Level Two</p>
-        <h2>Unlocking Possibility</h2>
+        <h2>Harvesting Possibility</h2>
         <Link to='2'>
           <RoundButton
             primaryColor={primaryColor}
