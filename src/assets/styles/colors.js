@@ -1,2 +1,5 @@
 export const burntSienna = '#E58242'
 export const dullLavendar = '#9892E5'
+export const eggplant = '#654265'
+export const carnation = '#F26862'
+export const downy = '#73C2CB'
